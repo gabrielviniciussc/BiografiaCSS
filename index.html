@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thaylize Sherliane Silva Santos</title>
+    <style>
+   /* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #bdc3d8;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #12195e; /* Cor de fundo escura */
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 100;
+    border-bottom: 5px solid #12195e;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+    color: #f3fab2;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f3fab2;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #3873aa; /* Cor de hover mais clara */
+    transform: translateY(-3px);
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os quadrados */
+    padding: 60px 20px;
+    gap: 60px;
+    margin-top: 80px; /* Garantindo que o conteúdo fique abaixo do cabeçalho */
+}
+
+/* Quadradinhos estilizados */
+.content,
+.realizacoes,
+.contato {
+    width: 100%;
+    max-width: 1400px; /* Aumentando a largura dos quadrados */
+    text-align: left;
+    background-color: #dddddb;
+    padding: 40px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Centraliza os elementos */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+
+.content:hover,
+.realizacoes:hover,
+.contato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Títulos */
+.content h2,
+.realizacoes h3,
+.contato h3 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.content h2 {
+    font-size: 2.8rem;
+    color: #136bc2; /* Azul escuro para o título */
+}
+
+.realizacoes h3 {
+    font-size: 2.5rem;
+    color: #348cff; /* Laranja para o título */
+}
+
+.contato h3 {
+    font-size: 2.5rem;
+    color: #3873aa; /* Vermelho para o título */
+}
+
+/* Hover nos títulos */
+.content h2:hover {
+    color: #136bc2; /* Azul escuro para hover */
+}
+
+.realizacoes h3:hover {
+    color: #348cff; /* Laranja para hover */
+}
+
+.contato h3:hover {
+    color: #3873aa; /* Vermelho para hover */
+}
+
+/* Texto */
+.content p,
+.realizacoes ul,
+.contato p {
+    font-size: 1.3rem;
+    color: #12195e;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.realizacoes ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.realizacoes ul li {
+    margin-bottom: 12px;
+}
+
+/* Imagem */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 300px; /* Limita a largura máxima */
+    height: auto; /* Ajusta a altura automaticamente */
+    border-radius: 15px;
+    object-fit: cover; /* Faz com que a imagem cubra completamente a área disponível */
+    border: 5px solid #12195e;
+    box-shadow: 0 12px 30px rgba(27, 2, 255, 0.075);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Redes Sociais */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 50px; /* Largura fixa dos ícones */
+    height: 50px; /* Altura fixa dos ícones */
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #12195e;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 1rem;
+    color: #fff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+
+    </style>
+<body>
+    <header>
+        <h1>Thaylize Sherliane Silva Santos</h1>
+        <nav>
+            <a href="#sobre-thaylize">Sobre</a>
+            <a href="#realizacoes">Realizações</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="img/thaylize.jpg" alt="Foto de Thaylize Sherliane Silva Santos no IFCE">
+        </div>
+
+        <div class="content" id="sobre-thaylize">
+            <h2>Sobre Thaylize Santos</h2>
+            <p>Thaylize Sherliane Silva Santos nasceu no dia 4 de maio de 2007, em Natal, Rio Grande do Norte. Porém, passou boa parte de sua infância na cidade de Santana do Matos, onde se acostumou com a tranquilidade e o convívio próximo com sua família.</p>
+            
+            <p>Aos 11 anos, ela se mudou para Natal e enfrentou alguns desafios, como a saudade da vida no interior e da família, mas logo percebeu que esses obstáculos a ajudaram a crescer e a se fortalecer. Com o tempo, ela se adaptou ao novo ritmo da cidade, sem nunca perder a conexão com suas raízes. Thaylize então se dedicou cada vez mais aos seus estudos e a buscar novos caminhos para o seu futuro, sendo destaque por onde passava.</p>
+            
+            <p>Devido a problemas familiares, ela e sua avó foram morar com o pai dela em Maranguape, em 2022. Hoje, Thaylize é estudante no Instituto Federal do Ceará, campus Maranguape, onde encontrou sua paixão pela programação. Seu maior objetivo é se tornar engenheira de software, com foco em Inteligência Artificial, aplicando seus conhecimentos para inovar e criar soluções tecnológicas que podem transformar o mundo.</p>
+        </div>
+        
+
+        <div class="realizacoes" id="realizacoes">
+            <h3>Realizações</h3>
+            <ul>
+                <li>Medalha de destaque acadêmico aos 11 e 12 anos, reconhecida como a melhor aluna da turma.</li>
+                <li>Aprovações simultâneas no Instituto Federal do Ceará e no Colégio Militar de Maracanaú aos 15 anos.</li>
+                <li>Praticou dança por 4 anos na Casa da Cultura de Santana do Matos. Desde pequena, sempre foi bastante apaixonada por dança.</li>
+                <li>Excelente jogadora de vôlei, se consagrando como campeã invicta da Copa Anchieta em 2024 pelo IFCE Campus Maranguape.</li>
+                <li>Participações em projetos, sendo destaque na Olimpíada Brasileira de Tecnologia (OBT).</li>
+            </ul>
+        </div>
+
+        <div class="contato" id="contato">
+            <h3>Contato</h3>
+            <p>Para entrar em contato com Thaylize Santos ou conhecer mais sobre sua trajetória, clique nos ícones abaixo para acessar suas redes sociais:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/thaylizesantos?igsh=MTZrYTd0YTJjdjU3Mg==" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram de Thaylize Santos">
+                </a>
+                <a href="https://github.com/thaylizesant0s" target="_blank">
+                    <img src="img/github.jpg" alt="GitHub de Thaylize Santos">
+                </a>
+                <a href="https://www.linkedin.com/in/thaylize-santos-98ab93319?trk=contact-info" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn de Thaylize Santos">
+                </a>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gabriel Vinicius da Silva Correia</p>
+    </footer>
+</body>
